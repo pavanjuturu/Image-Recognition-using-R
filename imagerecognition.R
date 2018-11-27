@@ -67,6 +67,7 @@ model %>%
 history <- model %>%
           fit(trainx,
               trainLables,
+              epochs = 30,
               batch_size=32,
               validation_split=0.2)
 
